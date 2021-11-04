@@ -1,3 +1,3 @@
-# {{cookiecutter.name}}
+# {{cookiecutter.project_name}}
 
 Repository Template generation powered by https://github.com/stefanbuck/cookiecutter-template.
