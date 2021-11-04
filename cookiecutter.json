@@ -1,3 +1,4 @@
 {
-    "name": "choose_project_name"
+    "name": "choose_project_name",
+    "directory": "src"
 }
