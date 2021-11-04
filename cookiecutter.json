@@ -1,5 +1,4 @@
 {
     "name": "cookiecutter-temp",
-    "project_name": "your project name",
-    "repository": "repo name"
+    "project_name": "your project name"
 }
