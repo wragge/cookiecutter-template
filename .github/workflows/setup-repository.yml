@@ -50,7 +50,7 @@ jobs:
         #                 cookiecutter.json file content
         #
         # --output-dir    Where to output the generated project dir into
-        run: cookiecutter . --no-input
+        run: cookiecutter . --no-input --verbose
 
       - name: Prepare root directory
         shell: bash
