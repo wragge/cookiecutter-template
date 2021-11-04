@@ -68,7 +68,7 @@ jobs:
         # generated project by cookiecutter. We want to move all the project
         # files into the root directory so we can reinitialize git in the next step
         run: |
-          rsync -r ./cookiecutter-temp/*/ . && \
+          rsync -r ./cookiecutter-temp/src/*/ . && \
           rm -rf ./cookiecutter-temp/
 
       - name: Reinitialize git repository
