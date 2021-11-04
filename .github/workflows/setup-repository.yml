@@ -50,7 +50,7 @@ jobs:
         #                 cookiecutter.json file content
         #
         # --output-dir    Where to output the generated project dir into
-        run: cookiecutter . --no-input --output-dir ./cookiecutter-temp
+        run: cookiecutter . --no-input
 
       - name: Prepare root directory
         shell: bash
@@ -68,7 +68,7 @@ jobs:
         # generated project by cookiecutter. We want to move all the project
         # files into the root directory so we can reinitialize git in the next step
         run: |
-          rsync -r ./cookiecutter-temp/src/*/ . && \
+          rsync -r ./cookiecutter-temp/*/ . && \
           rm -rf ./cookiecutter-temp/
 
       - name: Reinitialize git repository
